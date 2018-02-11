@@ -1,0 +1,20 @@
+ 
+post_install() {
+	#replacing config files
+    \cp -r /etc/namib-xfce-settings/. /
+
+	\cp /etc/skel_xfce/.xinitrc /etc/skel_new/.xinitrc
+	
+    \rm -rf /usr/share/backgrounds/xfce
+
+    \ln -s /usr/share/backgrounds/namib /usr/share/backgrounds/xfce
+}
+
+post_upgrade() {
+    post_install $1
+}
+
+post_remove() {
+    \rm -rf /usr/share/backgrounds/xfce
+}
+

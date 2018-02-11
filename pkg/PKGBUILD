@@ -1,0 +1,23 @@
+pkgname=namib-xfce-settings
+pkgdesc='Settings file for Namib Xfce'
+pkgver=18.02
+pkgrel=1
+arch=('any')
+url="https://github.com/MeerkatBrowser/namib-xfce-settings"
+license=('GPL')
+makedepends=('git')
+replace=('xfce4-artwork')
+source=("git+$url.git")
+sha256sums=('SKIP')
+install=$pkgname.install
+
+package() {
+    package_path="/etc/$pkgname"
+    cd "${srcdir}/${pkgname}"
+
+	install -d ${pkgdir}$package_path/etc/lightdm/
+    install -m644 etc/lightdm/* "${pkgdir}$package_path/etc/lightdm/"
+
+	install -d ${pkgdir}$package_path/etc/skel_xfce
+    cp -r ${srcdir}/namib-xfce-settings/etc/skel_xfce/ "${pkgdir}$package_path/etc/"
+}
