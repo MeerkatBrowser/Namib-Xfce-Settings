@@ -3,7 +3,7 @@ post_install() {
 	#replacing config files
     \cp -r /etc/namib-xfce-settings/. /
 
-	\cp -r /etc/skel_xfce/ /etc/skel_new/
+	\cp -r /etc/skel_xfce/. /etc/skel_new/
 	
     \rm -rf /usr/share/backgrounds/xfce
 
