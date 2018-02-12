@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-button-icon=/usr/share/icon/Arc/actions/symbolic/view-grid-symbolic.svg
+button-icon=view-grid-symbolic
 launcher-show-name=true
 launcher-show-description=true
 menu-width=400
