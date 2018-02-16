@@ -1,7 +1,12 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
+button-title=Applications
 button-icon=view-grid-symbolic
+button-single-row=flase
+show-button-title=true
+show-button-icon=true
 launcher-show-name=true
 launcher-show-description=true
+launcher-show-tooltip=true
 menu-width=400
 menu-height=519
 command-settings=xfce4-settings-manager
