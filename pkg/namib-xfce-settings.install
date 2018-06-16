@@ -1,20 +1,25 @@
  
 post_install() {
 	#replacing config files
-    \cp -r /etc/namib-xfce-settings/. /
+    #\cp -r /etc/namib-xfce-settings/. /
+    \cp -r /etc/lightdm_xfce/lightdm.conf /etc/lightdm/lightdm.conf
 
-	\cp -r /etc/skel_xfce/. /etc/skel_new/
+	#\cp -r /etc/skel_xfce/. /etc/skel_new/
 	
-    \rm -rf /usr/share/backgrounds/xfce
+    #\rm -rf /usr/share/backgrounds/xfce
 
-    \ln -s /usr/share/backgrounds/namib /usr/share/backgrounds/xfce
+    #\ln -s /usr/share/backgrounds/namib /usr/share/backgrounds/xfce
+    \cp -r /usr/share/backgrounds/namib/1708.jpg /usr/share/backgrounds/xfce/1708.jpg
+    \cp -r /usr/share/backgrounds/namib/1709.jpg /usr/share/backgrounds/xfce/1709.jpg
+    \cp -r /usr/share/backgrounds/namib/1711.jpg /usr/share/backgrounds/xfce/1711.jpg
+    \cp -r /usr/share/backgrounds/namib/1802.jpg /usr/share/backgrounds/xfce/1802.jpg
 }
 
 post_upgrade() {
     post_install $1
 }
 
-post_remove() {
-    \rm -rf /usr/share/backgrounds/xfce
-}
+#post_remove() {
+#    \rm -rf /usr/share/backgrounds/xfce
+#}
 
