@@ -1,6 +1,6 @@
 pkgname=namib-xfce-settings
 pkgdesc='Settings file for Namib Xfce'
-pkgver=18.02
+pkgver=18.06
 pkgrel=1
 arch=('any')
 url="https://github.com/MeerkatBrowser/namib-xfce-settings"

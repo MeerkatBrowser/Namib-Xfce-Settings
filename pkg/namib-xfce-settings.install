@@ -13,6 +13,7 @@ post_install() {
     \cp -r /usr/share/backgrounds/namib/1709.jpg /usr/share/backgrounds/xfce/1709.jpg
     \cp -r /usr/share/backgrounds/namib/1711.jpg /usr/share/backgrounds/xfce/1711.jpg
     \cp -r /usr/share/backgrounds/namib/1802.jpg /usr/share/backgrounds/xfce/1802.jpg
+    \cp -r /usr/share/backgrounds/namib/1806.jpg /usr/share/backgrounds/xfce/1806.jpg
 }
 
 post_upgrade() {
