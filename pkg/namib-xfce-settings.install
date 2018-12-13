@@ -2,7 +2,7 @@
 post_install() {
 	#replacing config files
     #\cp -r /etc/namib-xfce-settings/. /
-    \ln -sf /etc/lightdm_xfce/lightdm.conf /etc/lightdm/lightdm.conf
+    \cp -r /etc/lightdm_xfce/lightdm.conf /etc/lightdm/lightdm.conf
 
 	#\cp -r /etc/skel_xfce/. /etc/skel_new/
 	
